@@ -7,6 +7,8 @@ let name = readlineSync.question("May I have your name \n");
 
 console.log(chalk.redBright("Please enter your date of birth in the specified format.\n"));
 
+console.log(chalk.redBright("Try again.\n"));
+
 function calculateLeapYear(){
   let birthDate = readlineSync.question("\nEnter your date of birth in dd/mm/yy format E.g: 27/07/1999\n");
   let birthYear = birthDate.split('/')[2];
