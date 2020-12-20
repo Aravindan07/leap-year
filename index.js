@@ -5,15 +5,17 @@ console.log(chalk.yellowBright("This is a program to find whether you are born i
 
 let name = readlineSync.question("May I have your name \n");
 
-console.log(chalk.redBright("Please enter your date of birth in the specified format.\n"));
+// console.log(chalk.redBright("Please enter your date of birth in the specified format.\n"));
 
-console.log(chalk.redBright("Try again.\n"));
+// console.log(chalk.redBright("Try again.\n"));
 
 function calculateLeapYear(){
   let birthDate = readlineSync.question("\nEnter your date of birth in dd/mm/yy format E.g: 27/07/1999\n");
   let birthYear = birthDate.split('/')[2];
   if(!birthYear){
-    console.log(chalk.redBright("Please enter the date in the above specified format"));
+    console.log(chalk.redBright("Please enter your date of birth in the specified format.\n"));
+
+console.log(chalk.redBright("Try again.\n"));
     return;
   }
   if((birthYear % 4 === 0 ) && (birthYear % 100 !=0) || (birthYear % 4 ===0)){
